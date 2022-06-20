@@ -1,0 +1,152 @@
+
+    html {
+      font-family: sans-serif; /* 1 */
+      -ms-text-size-adjust: 100%; /* 2 */
+      -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  body {
+    margin: 0;
+}
+
+    h1{
+        font-size: 2,5em;
+        margin: 0.67em 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        background: navy;
+    
+        padding: 10px;
+        text-align: center;
+    
+    }
+    a {
+      background: transparent;
+  }
+    div{
+        padding: 20px;
+    }
+    .navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        
+        list-style: none;
+        margin: 0; 
+        background: navy;
+      }
+      
+      .navigation a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: white;
+      }
+      
+      .navigation a:hover {
+        background: #1565C0;
+      }
+      
+      @media all and (max-width: 800px) {
+        .navigation {
+          justify-content: space-around;
+        }
+      }
+      
+      @media all and (max-width: 600px) {
+        .navigation {
+          flex-flow: column wrap;
+          padding: 0;
+        }
+        .navigation a { 
+          text-align: center; 
+          padding: 10px;
+          border-top: 1px solid rgba(255, 255, 255,0.3); 
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+        }
+        .navigation li:last-of-type a {
+          border-bottom: none;
+        }
+        .menu li > ul > li {
+            width: 80px;
+            height: 35px;
+            padding-top: 15px;
+            padding-left: 10px;
+            display: block;
+          
+            }
+      }
+    section{
+
+        background-color: white;
+        width: 990px;
+        float: left;
+        margin: 5px;
+        padding: 25px;
+        font-size: 1,5em;
+        font-family: 'Baloo Paaji 2', cursive;
+    }
+    
+    
+    p{
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+      aside{
+        
+        background-color: white;
+        width: 350px;
+        float: right;
+        margin: 5px;
+        padding: 25px;
+    }
+    h3{
+        font-size: 2em;
+        margin: 0.67em 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        background: navy;
+    
+        padding: 10px;
+        text-align: center;
+    
+    }
+    footer{
+        background-color: navy;
+        height:20px ;
+        clear: both;
+        text-align: center;
+        color: white;
+    }
+    .container-fluid, .container {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    .container-fluid {
+      padding-right: var(--outer-margin, 2rem);
+      padding-left: var(--outer-margin, 2rem);
+    }
+    img {
+      border: 0;
+  }
+  
+  .row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: var(--gutter-compensation, -0.5rem);
+    margin-left: var(--gutter-compensation, -0.5rem);
+  }
