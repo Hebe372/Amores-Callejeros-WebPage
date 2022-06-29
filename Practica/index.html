@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <link rel="STYLESHEET" href="estilos.css">
     <link rel="shortcut icon" href="../Practica/Imagenes/Logo_Amores.jpg" width="50px" height="50px">
     <title>AMORES CALLEJEROS</title>
@@ -11,18 +11,13 @@
 </head>
 <body>
     <header>
-            <ul class="navigation">
-                <li><a href="adopciones.html">ADOPCIONES</a>
-                    <ul>
-                        <li><a href="adopcionesPerros.html">Perros</a></li>
-                        <li><a href="adopcionesGatos.html">Gatos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#seccion1">TRANSITOS</a></li>
-                <li><a href="#seccion2">COLABORACIONES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-                
+        <ul class="navigation"> 
+            <li><a href="adopcionesPerros.html">ADOPCIONES DE PERROS</a></li>
+            <li><a href="adopcionesGatos.html">ADOPCIONES DE GATOS</a></li>
+            <li><a href="transitos.html">TRANSITOS</a></li>
+            <li><a href="colaboraciones.html">COLABORACIONES</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
         <h1>AMORES CALLEJEROS</h1>
         
     </header>
@@ -34,6 +29,7 @@
         <img src="../Practica/Imagenes/Perro en la playa.jpg" width="350px" height="300px">
     </div>
     <h1>Nuestra Misión</h1>
+    
     <section> 
         <p align="justify"> <b>
             Amores Callejeros nació el 9 de julio de 2021. Desde ese día nos propusimos trabajar en equipo junto a la comunidad, 
@@ -58,47 +54,24 @@
             saber que es un dinero fijo que entra por mes para darle a ellos lo que necesitan. 
         
         </b></p>
+    
+        
+                
     </section>
     <aside>
         <img src="../Practica/Imagenes/Logo_Amores.jpg" width="350px" height="300px">
     </aside>
-    <section id="seccion1">
-        <h3>Tránsitos</h3>
-        <p align="justify"> <b>Que significa transitar?</b></p>
-        <p align="justify"> <b>Transitar significa ser un puente de sanación para animales callejeros.</b></p>
-        <p align="justify"> <b>Brindarles hogar por un tiempo determinado para que se recuperen, sanen y finalmente sean adoptados. </b></p>
-        <p align="justify"> <b>En la actualidad no contamos con un espacio físico propio por eso necesitamos tránsitos responsables para poder sacar de la calle a animales y cambiar su realidad. 
-            Tu casa, patio, terreno, Lavadero, cuartito puede ser es espacio de sanación.</b></p>
-            <p align="justify"> <b>Gastos totalmente cubiertos inclusive la adecuación del espacio para él bienestar del rescatado. </b></p>
-        <p align="justify"> <b>Nos hacemos cargo de todos los gastos de alimentación y tratamiento y adecuación del lugar para el bienestar de los rescatados.</b></p>  
-        <p align="justify"> <b>Para ofrecer tránsitos pueden contactarnos a través de esta página en el 
-            formulario de contacto o en nuestra redes sociales: Facebook: amorescallejeros21 - Instagram: @amorescallejeros_</b></p>
-        
-        <h2>Nos encontramos en</h2>
-        <p><a href="https://www.facebook.com/amorescallejeros21/"><img src="../Practica/Imagenes/icono facebook.png" width="35px" height="35px"></a>
-            <a href="https://www.instagram.com/amorescallejeros_/"><img src="../Practica/Imagenes/icono instagram.png" width="40px" height="40px"></a></p>
-    </section>
-    <aside>
-        <img src="../Practica/Imagenes/Logo_Amores.jpg" width="350px" height="300px">
-    </aside>
-    <section id="seccion2">
-        <h3>Colaboraciones</h3>
-        <p align="justify"> <b>Somos un grupo independiente que nos une el amor por los animales. Todos los rescates, tratamientos y alimentación
-        de animales los podemos realizar gracias a la colaboración de las personas que sienten empatía con los animales y apoyan nuestra causa.</b></p>
-        <p align="justify"> <b>Nos pueden colaborar con ayuda económica, con alimento, con bolsas vacías de alimento, con tapitas, con arroz, 
-        fideos, carne. También necesitamos mantas, sacos, sábanas, correas, cuchas, colchonetas, potes para agua, potes para comida.</b></p>
-        <p align="justify"> <b>Pueden colaborar a través de mercado pago AMORESCALLEJEROS CVU 0000003100067820365290 o contactándonos a través de esta página en el 
-        formulario de contacto o en nuestra redes sociales: Facebook: amorescallejeros21 - Instagram: @amorescallejeros_</b></p>
-        <h2>Nos encontramos en</h2>
-        
-        <p><a href="https://www.facebook.com/amorescallejeros21/"><img src="../Practica/Imagenes/icono facebook.png" width="35px" height="35px"></a>
-            <a href="https://www.instagram.com/amorescallejeros_/"><img src="../Practica/Imagenes/icono instagram.png" width="40px" height="40px"></a></p>
-    </section>  
-    <aside>
-        <img src="../Practica/Imagenes/Logo_Amores.jpg" width="350px" height="300px">
-    </aside>
+    <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="icon-up-narrow"><img src="../Practica/Imagenes/icon-up-arrow.png" alt="15px" width="15px"></i>
+    </button>
+    <script>
+        const btn_scrolltop = document.getElementById("btn_scrolltop")
+            btn_scrolltop.addEventListener('click', ()=>{
+                window.scrollTo(0,0)
+            })
+    </script>
     <footer>
-        <span>Derechos Reservados 2022</span>
+        <span>Amores Callejeros - Derechos Reservados 2022</span>
     </footer>
 </body>
 </html>

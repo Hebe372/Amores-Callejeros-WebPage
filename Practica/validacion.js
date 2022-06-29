@@ -22,3 +22,5 @@ function validarFormulario(evento) {
 alert("Muchas gracias por contactarnos");
 this.submit();
 }
+
+
